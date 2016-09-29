@@ -2,6 +2,15 @@ body {
   background-color: #193441;
 }
 
+h1, h2, h3, h4, h5, h6, button {
+  font-family: 'Baloo Bhai', cursive;
+}
+
 #social-container {
   background-color: #91AA9D;
+}
+
+#logo-container .callout {
+  background-color: #193441;
+  color: white;
 }
