@@ -13,4 +13,28 @@ h1, h2, h3, h4, h5, h6, button {
 #logo-container .callout {
   background-color: #193441;
   color: white;
+  margin-bottom: 0;
+}
+
+#menu-container {
+  background-color: #FCFFF5;
+}
+
+#menu-container li a {
+  color: #193441;
+  font-family: 'Baloo Bhai', cursive;
+}
+
+#submenu-container {
+  border: 0;
+}
+
+#menu-container li a:hover,
+#submenu-container li a:hover {
+  color: #3E606F;
+}
+
+#submenu-container li a {
+  background-color: #FCFFF5;
+  color: #91AA9D;
 }
