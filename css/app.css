@@ -38,3 +38,14 @@ h1, h2, h3, h4, h5, h6, button {
   background-color: #FCFFF5;
   color: #91AA9D;
 }
+
+#tickets-action .callout {
+  background-color: #D1DBBD;
+  color: white;
+}
+
+#tickets-action .callout button {
+  color: #193441;
+  border: 1px solid #193441;
+}
+
