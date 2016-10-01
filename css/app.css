@@ -93,3 +93,23 @@ h1, h2, h3, h4, h5, h6, button {
   text-align: right;
 }
 
+#tickets-container {
+  padding: 1em 0;
+  background-color: #D1DBBD;
+  color: #193441;
+}
+
+.pricing-table {
+  border: 1px solid #193441;
+  font-family: 'Russo One', sans-serif;
+}
+
+.pricing-table li,
+.pricing-table li.description {
+  font-size: 15px;
+}
+
+.pricing-table li.price,
+.pricing-table li.title {
+  font-size: 30px;
+}
