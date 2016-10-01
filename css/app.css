@@ -113,3 +113,13 @@ h1, h2, h3, h4, h5, h6, button {
 .pricing-table li.title {
   font-size: 30px;
 }
+
+#info-container {
+  background-color: #193441;
+  color: white;
+  padding: 1em 0;
+}
+
+#info-container .info-map iframe {
+  width: 100%;
+}
