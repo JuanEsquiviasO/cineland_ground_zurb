@@ -123,3 +123,22 @@ h1, h2, h3, h4, h5, h6, button {
 #info-container .info-map iframe {
   width: 100%;
 }
+
+#suscribete-container {
+  background-color: #91AA9D;
+  color: white;
+  padding: 1em 0;
+}
+
+#suscribete-container input[type="submit"] {
+  font-family: 'Russo One', sans-serif;
+}
+
+#suscribete-container .error-container {
+  font-family: 'Baloo Bhai', cursive;
+}
+
+.is-invalid-input:not(:focus) {
+  background-color: rgba(223, 219, 219, 0.81);
+  border-color: rgba(223, 219, 219, 0.81);
+}
