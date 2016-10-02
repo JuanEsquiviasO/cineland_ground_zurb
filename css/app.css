@@ -142,3 +142,7 @@ h1, h2, h3, h4, h5, h6, button {
   background-color: rgba(223, 219, 219, 0.81);
   border-color: rgba(223, 219, 219, 0.81);
 }
+
+.data-sticky {
+  width: 100%;
+}

@@ -46,26 +46,30 @@
     <!-- /Logo -->
 
     <!-- menu -->
-    <section id="menu-container">
-      <ul class="menu dropdown align-spaced" data-dropdown-menu>
-        <li>
-          <a href="#">Tickets</a>
-        </li>
-        <li>
-          <a href="#">Lineup</a>
-          <ul id="submenu-container" class="menu">
-            <li><a href="#">Friday</a></li>
-            <li><a href="#">Saturday</a></li>
-            <li><a href="#">Sunday</a></li>
+    <section id="scrollSticky" data-sticky-container>
+      <div class="data-sticky" data-sticky data-options="marginTop:0;" data-sticky-on="small" data-top-anchor="scrollSticky">
+        <nav id="menu-container" data-magellan>
+          <ul class="menu dropdown align-spaced" data-dropdown-menu>
+            <li>
+              <a href="#tickets-container">Tickets</a>
+            </li>
+            <li>
+              <a href="#lineup-container">Lineup</a>
+              <ul id="submenu-container" class="menu">
+                <li><a href="#">Friday</a></li>
+                <li><a href="#">Saturday</a></li>
+                <li><a href="#">Sunday</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#info-container">Information</a>
+            </li>
+            <li>
+              <a href="#suscribete-container">Suscribe</a>
+            </li>
           </ul>
-        </li>
-        <li>
-          <a href="#">Information</a>
-        </li>
-        <li>
-          <a href="#">Suscribe</a>
-        </li>
-      </ul>
+        </nav>
+      </div>
     </section>
     <!-- /menu -->
 
@@ -80,7 +84,7 @@
     <!-- /Tickets -->
 
     <!-- Lineup -->
-    <section id="lineup-container">
+    <section id="lineup-container" data-magellan-target="lineup-container">
       <h3 class="text-center">Lineup</h3>
       <ul class="tabs text-center" data-tabs id="lineup-tabs">
         <li class="tabs-title is-active">
@@ -280,7 +284,7 @@
 
       <!-- Price in Table -->
 
-    <section id="tickets-container">
+    <section id="tickets-container" data-magellan-target="tickets-container">
       <h3 class="text-center">Buy Tickets</h3>
       <div class="row" data-equalizer data-equalize-on="small">
         <div class="column small-10 small-offset-1 medium-6 medium-offset-3">
@@ -322,7 +326,7 @@
 
       <!-- Suscribe   -->
 
-      <section id="suscribete-container">
+      <section id="suscribete-container" data-magellan-target="suscribete-container">
         <h3 class="text-center">Suscribe</h3>
         <h4 class="text-center"><small>Receive the latest news of the festival</small></h4>
         <form action="" method="" novalidate="" data-abide>
@@ -347,7 +351,7 @@
 
       <!-- Information -->
 
-      <section id="info-container">
+      <section id="info-container" data-magellan-target="info-container">
         <h3 class="text-center">Information</h3>
         <div class="info-map" data-interchange="[assets/map-small.html, small], [assets/map.html, medium]"></div>
       </section>
