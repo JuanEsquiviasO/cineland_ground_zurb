@@ -13,350 +13,387 @@
   </head>
   <body>
 
-    <!-- Social -->
-
-    <section id="social-container">
-      <div class="row align-center text-center">
-        <div class="small-1 column">
-          <a href="#" target="_blank">
-            <i class="fi-social-facebook"></i>
-          </a>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        
+        <div id="offCanvas" data-off-canvas class="off-canvas position-left">
+          <nav data-magellan>
+            <ul class=" vertical menu">
+              <li>
+                <a href="#tickets-container">Tickets</a>
+              </li>
+              <li>
+                <a href="#lineup-container">Lineup</a>
+                <ul id="submenu-container" class="menu">
+                  <!-- <li><a data-toggle-dia="panelViernes" href="#lineup-container">Friday</a></li>
+                  <li><a data-toggle-dia="panelSabado" href="#lineup-container">Saturday</a></li>
+                  <li><a data-toggle-dia="panelDomingo" href="#lineup-container">Sunday</a></li> -->
+                </ul>
+              </li>
+              <li>
+                <a href="#info-container">Information</a>
+              </li>
+              <li>
+                <a href="#suscribete-container">Suscribe</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="small-1 column">
-          <a href="#" target="_blank">
-            <i class="fi-social-twitter"></i>
-          </a>
-        </div>
-        <div class="small-1 column">
-          <a href="#" target="_blank">
-            <i class="fi-social-instagram"></i>
-          </a>
-        </div>
-      </div>
-    </section>
+      
+        <div class="off-canvas-content" data-off-canvas-content>
+          
+          <!-- Social -->
 
-    <!-- /Social -->
+          <section id="social-container">
+            <div class="row align-center text-center">
+              <div class="small-1 column">
+                <a href="#" target="_blank">
+                  <i class="fi-social-facebook"></i>
+                </a>
+              </div>
+              <div class="small-1 column">
+                <a href="#" target="_blank">
+                  <i class="fi-social-twitter"></i>
+                </a>
+              </div>
+              <div class="small-1 column">
+                <a href="#" target="_blank">
+                  <i class="fi-social-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </section>
 
-    <!-- Logo -->
-    <section id="logo-container">
-      <div class="callout text-center">
-        <h1>Cineland Fest 2016</h1
-      </div>
-    </section>
-    <!-- /Logo -->
+          <!-- /Social -->
 
-    <!-- menu -->
-    <section id="scrollSticky" data-sticky-container>
-      <div class="data-sticky" data-sticky data-options="marginTop:0;" data-sticky-on="small" data-top-anchor="scrollSticky">
-        <nav id="menu-container" data-magellan>
-          <ul class="menu dropdown align-spaced" data-dropdown-menu>
-            <li>
-              <a href="#tickets-container">Tickets</a>
-            </li>
-            <li>
-              <a href="#lineup-container">Lineup</a>
-              <ul id="submenu-container" class="menu">
-                <li><a data-toggle-dia="panelViernes" href="#lineup-container">Friday</a></li>
-                <li><a data-toggle-dia="panelSabado" href="#lineup-container">Saturday</a></li>
-                <li><a data-toggle-dia="panelDomingo" href="#lineup-container">Sunday</a></li>
+          <!-- Logo -->
+          <section id="logo-container">
+            <div class="callout text-center">
+              <h1>Cineland Fest 2016</h1
+            </div>
+          </section>
+          <!-- /Logo -->
+
+          <!-- menu -->
+          <section id="scrollSticky" data-sticky-container>
+            <div class="data-sticky" data-sticky id="sticky" data-options="marginTop:0;" data-sticky-on="small" data-top-anchor="scrollSticky">
+              <nav id="menu-container" data-magellan>
+              <ul class="menu dropdown align-spaced show-for-small-only">
+                <li><a href="#" data-toggle="offCanvas">Menu</a></li>
               </ul>
-            </li>
-            <li>
-              <a href="#info-container">Information</a>
-            </li>
-            <li>
-              <a href="#suscribete-container">Suscribe</a>
-            </li>
-          </ul>
-        </nav>
+                <ul class="menu dropdown align-spaced show-for-medium" data-dropdown-menu>
+                  <li>
+                    <a href="#tickets-container">Tickets</a>
+                  </li>
+                  <li>
+                    <a href="#lineup-container">Lineup</a>
+                    <ul id="submenu-container" class="menu">
+                      <li><a data-toggle-dia="panelViernes" href="#lineup-container">Friday</a></li>
+                      <li><a data-toggle-dia="panelSabado" href="#lineup-container">Saturday</a></li>
+                      <li><a data-toggle-dia="panelDomingo" href="#lineup-container">Sunday</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#info-container">Information</a>
+                  </li>
+                  <li>
+                    <a href="#suscribete-container">Suscribe</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </section>
+          <!-- /menu -->
+
+          <!-- Tickets -->
+          <section id="tickets-action">
+            <div class="callout larg text-center">
+              <a href="#">
+                <button class="large hollow button">Buy Tickets</button>
+              </a>
+            </div>
+          </section>
+          <!-- /Tickets -->
+
+          <!-- Lineup -->
+          <section id="lineup-container" data-magellan-target="lineup-container">
+            <h3 class="text-center">Lineup</h3>
+            <ul class="tabs text-center" data-tabs id="lineup-tabs">
+              <li class="tabs-title is-active">
+                <a href="#panelViernes">Friday</a>
+              </li>
+              <li class="tabs-title">
+                <a href="#panelSabado">Saturday</a>
+              </li>
+              <li class="tabs-title">
+                <a href="#panelDomingo">Sunday</a>
+              </li>
+            </ul>
+          <!-- /Lineup -->
+
+            <!-- Tabs content -->
+            <div class="tabs-content" data-tabs-content="lineup-tabs">
+             <div class="tabs-panel is-active" id="panelViernes">
+                <div class="row">
+                  
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img class="orbit-image" src="http://cdn1-www.comingsoon.net/assets/uploads/2016/07/Startrek.jpg">
+                        <figcaption class="orbit-caption">Star Trek</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img class="orbit-image" src="http://cdn1-www.comingsoon.net/assets/uploads/2016/07/Startrek.jpg">
+                        <figcaption class="orbit-caption">Star Trek</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img class="orbit-image" src="http://cdn1-www.comingsoon.net/assets/uploads/2016/07/Startrek.jpg">
+                        <figcaption class="orbit-caption">Star Trek</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img class="orbit-image" src="http://cdn1-www.comingsoon.net/assets/uploads/2016/07/Startrek.jpg">
+                        <figcaption class="orbit-caption">Star Trek</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img class="orbit-image" src="http://cdn1-www.comingsoon.net/assets/uploads/2016/07/Startrek.jpg">
+                        <figcaption class="orbit-caption">Star Trek</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img class="orbit-image" src="http://cdn1-www.comingsoon.net/assets/uploads/2016/07/Startrek.jpg">
+                        <figcaption class="orbit-caption">Star Trek</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="tabs-panel" id="panelSabado">
+                <div class="row">
+                  
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img class="orbit-image" src="http://mplayhd.com/wp-content/uploads/2015/09/the-godfather-508d945641aed-e1442492822118.jpg" alt="The Godfather">
+                        <figcaption class="orbit-caption">The Godfather</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img class="orbit-image" src="http://mplayhd.com/wp-content/uploads/2015/09/the-godfather-508d945641aed-e1442492822118.jpg" alt="The Godfather">
+                        <figcaption class="orbit-caption">The Godfather</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img class="orbit-image" src="http://mplayhd.com/wp-content/uploads/2015/09/the-godfather-508d945641aed-e1442492822118.jpg" alt="The Godfather">
+                        <figcaption class="orbit-caption">The Godfather</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img class="orbit-image" src="http://mplayhd.com/wp-content/uploads/2015/09/the-godfather-508d945641aed-e1442492822118.jpg" alt="The Godfather">
+                        <figcaption class="orbit-caption">The Godfather</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img class="orbit-image" src="http://mplayhd.com/wp-content/uploads/2015/09/the-godfather-508d945641aed-e1442492822118.jpg" alt="The Godfather">
+                        <figcaption class="orbit-caption">The Godfather</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img class="orbit-image" src="http://mplayhd.com/wp-content/uploads/2015/09/the-godfather-508d945641aed-e1442492822118.jpg" alt="The Godfather">
+                        <figcaption class="orbit-caption">The Godfather</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="tabs-panel" id="panelDomingo">
+                <div class="row">
+                  
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img class="orbit-image" src="http://media.vietnamvn.net/uploads/2016/08/ben-hur-2016-ban-su-thi-cu-co-lam-nen-thanh-cong-moi-20160812081020-1470989420-8814.jpg" alt="Ben Hur">
+                        <figcaption class="orbit-caption">Ben-Hur</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img class="orbit-image" src="http://media.vietnamvn.net/uploads/2016/08/ben-hur-2016-ban-su-thi-cu-co-lam-nen-thanh-cong-moi-20160812081020-1470989420-8814.jpg" alt="Ben Hur">
+                        <figcaption class="orbit-caption">Ben-Hur</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img class="orbit-image" src="http://media.vietnamvn.net/uploads/2016/08/ben-hur-2016-ban-su-thi-cu-co-lam-nen-thanh-cong-moi-20160812081020-1470989420-8814.jpg" alt="Ben Hur">
+                        <figcaption class="orbit-caption">Ben-Hur</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img class="orbit-image" src="http://media.vietnamvn.net/uploads/2016/08/ben-hur-2016-ban-su-thi-cu-co-lam-nen-thanh-cong-moi-20160812081020-1470989420-8814.jpg" alt="Ben Hur">
+                        <figcaption class="orbit-caption">Ben-Hur</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img class="orbit-image" src="http://media.vietnamvn.net/uploads/2016/08/ben-hur-2016-ban-su-thi-cu-co-lam-nen-thanh-cong-moi-20160812081020-1470989420-8814.jpg" alt="Ben Hur">
+                        <figcaption class="orbit-caption">Ben-Hur</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img class="orbit-image" src="http://media.vietnamvn.net/uploads/2016/08/ben-hur-2016-ban-su-thi-cu-co-lam-nen-thanh-cong-moi-20160812081020-1470989420-8814.jpg" alt="Ben Hur">
+                        <figcaption class="orbit-caption">Ben-Hur</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+          </section>
+            <!-- /Tabs content -->
+
+
+            <!-- Price in Table -->
+
+          <section id="tickets-container" data-magellan-target="tickets-container">
+            <h3 class="text-center">Buy Tickets</h3>
+            <div class="row" data-equalizer data-equalize-on="small">
+              <div class="column small-10 small-offset-1 medium-6 medium-offset-3">
+                <ul class="pricing-table no-bullet text-center">
+                  <li class="title">Platinium</li>
+                  <li class="price">$99.99</li>
+                  <li class="description">VIP</li>
+                  <li>Merchandise item designed and created exclusively for package purchasers</li>
+                  <li>Collectible Cineland laminate + lanyard to remember your evening</li>
+                  <li>Designated check-in with our on-site event staff</li>
+                  <li><a class="button" href="#">Buy Now</a></li>
+                </ul>
+              </div>
+              <div class="column small-6 medium-4 medium-offset-2">
+                <ul class="pricing-table no-bullet text-center">
+                  <li class="title">Gold</li>
+                  <li class="price">$59.99</li>
+                  <li class="description">PREMIUM</li>
+                  <li>Merchandise items</li>
+                  <li data-equalizer-watch>Collectible Cineland Videos and Toys</li>
+                  <li>Parking all the day</li>
+                  <li><a class="button" href="#">Buy Now</a></li>
+                </ul>
+              </div>
+              <div class="column small-6 medium-4">
+                <ul class="pricing-table no-bullet text-center">
+                  <li class="title">Silver</li>
+                  <li class="price">$29.99</li>
+                  <li class="description">NORMAL</li>
+                  <li>Access playground</li>
+                  <li data-equalizer-watch>Merchandise Basic</li>
+                  <li>Access at the foodcourt</li>
+                  <li><a class="button" href="#">Buy Now</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>  
+            <!-- /Price in Table -->
+
+            <!-- Suscribe   -->
+
+            <section id="suscribete-container" data-magellan-target="suscribete-container">
+              <h3 class="text-center">Suscribe</h3>
+              <h4 class="text-center"><small>Receive the latest news of the festival</small></h4>
+              <form action="" method="" novalidate="" data-abide>
+                <div data-abide-error class="row columns small-12 medium-6 text-center error-container" style="display: none;">
+                  <p><i class="fi-alert"></i> Income an invalid email</p>
+                </div>
+                <div class="row columns small-12 medium-6">
+                  <div class="input-group">
+                    <span class="input-group-label"><i class="fi-mail"></i></span>
+                    <input type="email" name="email" class="input-group-field" placeholder="me@mail.com" required>
+                    <div class="input-group-button">
+                      <input type="submit" class="button" value="Suscribe">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </section>
+
+
+            <!-- /Suscribe   -->
+
+
+            <!-- Information -->
+
+            <section id="info-container" data-magellan-target="info-container">
+              <h3 class="text-center">Information</h3>
+              <div class="info-map" data-interchange="[assets/map-small.html, small], [assets/map.html, medium]"></div>
+            </section>
+
+            <!-- /Information -->
+          
+        </div>
+
       </div>
-    </section>
-    <!-- /menu -->
-
-    <!-- Tickets -->
-    <section id="tickets-action">
-      <div class="callout larg text-center">
-        <a href="#">
-          <button class="large hollow button">Buy Tickets</button>
-        </a>
-      </div>
-    </section>
-    <!-- /Tickets -->
-
-    <!-- Lineup -->
-    <section id="lineup-container" data-magellan-target="lineup-container">
-      <h3 class="text-center">Lineup</h3>
-      <ul class="tabs text-center" data-tabs id="lineup-tabs">
-        <li class="tabs-title is-active">
-          <a href="#panelViernes">Friday</a>
-        </li>
-        <li class="tabs-title">
-          <a href="#panelSabado">Saturday</a>
-        </li>
-        <li class="tabs-title">
-          <a href="#panelDomingo">Sunday</a>
-        </li>
-      </ul>
-    <!-- /Lineup -->
-
-      <!-- Tabs content -->
-      <div class="tabs-content" data-tabs-content="lineup-tabs">
-       <div class="tabs-panel is-active" id="panelViernes">
-          <div class="row">
-            
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img class="orbit-image" src="http://cdn1-www.comingsoon.net/assets/uploads/2016/07/Startrek.jpg">
-                  <figcaption class="orbit-caption">Star Trek</figcaption>
-                </div>
-              </div>
-            </div>
-            
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img class="orbit-image" src="http://cdn1-www.comingsoon.net/assets/uploads/2016/07/Startrek.jpg">
-                  <figcaption class="orbit-caption">Star Trek</figcaption>
-                </div>
-              </div>
-            </div>
-            
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img class="orbit-image" src="http://cdn1-www.comingsoon.net/assets/uploads/2016/07/Startrek.jpg">
-                  <figcaption class="orbit-caption">Star Trek</figcaption>
-                </div>
-              </div>
-            </div>
-            
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img class="orbit-image" src="http://cdn1-www.comingsoon.net/assets/uploads/2016/07/Startrek.jpg">
-                  <figcaption class="orbit-caption">Star Trek</figcaption>
-                </div>
-              </div>
-            </div>
-            
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img class="orbit-image" src="http://cdn1-www.comingsoon.net/assets/uploads/2016/07/Startrek.jpg">
-                  <figcaption class="orbit-caption">Star Trek</figcaption>
-                </div>
-              </div>
-            </div>
-            
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img class="orbit-image" src="http://cdn1-www.comingsoon.net/assets/uploads/2016/07/Startrek.jpg">
-                  <figcaption class="orbit-caption">Star Trek</figcaption>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-        <div class="tabs-panel" id="panelSabado">
-          <div class="row">
-            
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img class="orbit-image" src="http://mplayhd.com/wp-content/uploads/2015/09/the-godfather-508d945641aed-e1442492822118.jpg" alt="The Godfather">
-                  <figcaption class="orbit-caption">The Godfather</figcaption>
-                </div>
-              </div>
-            </div>
-            
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img class="orbit-image" src="http://mplayhd.com/wp-content/uploads/2015/09/the-godfather-508d945641aed-e1442492822118.jpg" alt="The Godfather">
-                  <figcaption class="orbit-caption">The Godfather</figcaption>
-                </div>
-              </div>
-            </div>
-            
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img class="orbit-image" src="http://mplayhd.com/wp-content/uploads/2015/09/the-godfather-508d945641aed-e1442492822118.jpg" alt="The Godfather">
-                  <figcaption class="orbit-caption">The Godfather</figcaption>
-                </div>
-              </div>
-            </div>
-            
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img class="orbit-image" src="http://mplayhd.com/wp-content/uploads/2015/09/the-godfather-508d945641aed-e1442492822118.jpg" alt="The Godfather">
-                  <figcaption class="orbit-caption">The Godfather</figcaption>
-                </div>
-              </div>
-            </div>
-            
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img class="orbit-image" src="http://mplayhd.com/wp-content/uploads/2015/09/the-godfather-508d945641aed-e1442492822118.jpg" alt="The Godfather">
-                  <figcaption class="orbit-caption">The Godfather</figcaption>
-                </div>
-              </div>
-            </div>
-            
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img class="orbit-image" src="http://mplayhd.com/wp-content/uploads/2015/09/the-godfather-508d945641aed-e1442492822118.jpg" alt="The Godfather">
-                  <figcaption class="orbit-caption">The Godfather</figcaption>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-        <div class="tabs-panel" id="panelDomingo">
-          <div class="row">
-            
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img class="orbit-image" src="http://media.vietnamvn.net/uploads/2016/08/ben-hur-2016-ban-su-thi-cu-co-lam-nen-thanh-cong-moi-20160812081020-1470989420-8814.jpg" alt="Ben Hur">
-                  <figcaption class="orbit-caption">Ben-Hur</figcaption>
-                </div>
-              </div>
-            </div>
-            
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img class="orbit-image" src="http://media.vietnamvn.net/uploads/2016/08/ben-hur-2016-ban-su-thi-cu-co-lam-nen-thanh-cong-moi-20160812081020-1470989420-8814.jpg" alt="Ben Hur">
-                  <figcaption class="orbit-caption">Ben-Hur</figcaption>
-                </div>
-              </div>
-            </div>
-            
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img class="orbit-image" src="http://media.vietnamvn.net/uploads/2016/08/ben-hur-2016-ban-su-thi-cu-co-lam-nen-thanh-cong-moi-20160812081020-1470989420-8814.jpg" alt="Ben Hur">
-                  <figcaption class="orbit-caption">Ben-Hur</figcaption>
-                </div>
-              </div>
-            </div>
-            
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img class="orbit-image" src="http://media.vietnamvn.net/uploads/2016/08/ben-hur-2016-ban-su-thi-cu-co-lam-nen-thanh-cong-moi-20160812081020-1470989420-8814.jpg" alt="Ben Hur">
-                  <figcaption class="orbit-caption">Ben-Hur</figcaption>
-                </div>
-              </div>
-            </div>
-            
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img class="orbit-image" src="http://media.vietnamvn.net/uploads/2016/08/ben-hur-2016-ban-su-thi-cu-co-lam-nen-thanh-cong-moi-20160812081020-1470989420-8814.jpg" alt="Ben Hur">
-                  <figcaption class="orbit-caption">Ben-Hur</figcaption>
-                </div>
-              </div>
-            </div>
-            
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img class="orbit-image" src="http://media.vietnamvn.net/uploads/2016/08/ben-hur-2016-ban-su-thi-cu-co-lam-nen-thanh-cong-moi-20160812081020-1470989420-8814.jpg" alt="Ben Hur">
-                  <figcaption class="orbit-caption">Ben-Hur</figcaption>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-    </section>
-      <!-- /Tabs content -->
-
-
-      <!-- Price in Table -->
-
-    <section id="tickets-container" data-magellan-target="tickets-container">
-      <h3 class="text-center">Buy Tickets</h3>
-      <div class="row" data-equalizer data-equalize-on="small">
-        <div class="column small-10 small-offset-1 medium-6 medium-offset-3">
-          <ul class="pricing-table no-bullet text-center">
-            <li class="title">Platinium</li>
-            <li class="price">$99.99</li>
-            <li class="description">VIP</li>
-            <li>Merchandise item designed and created exclusively for package purchasers</li>
-            <li>Collectible Cineland laminate + lanyard to remember your evening</li>
-            <li>Designated check-in with our on-site event staff</li>
-            <li><a class="button" href="#">Buy Now</a></li>
-          </ul>
-        </div>
-        <div class="column small-6 medium-4 medium-offset-2">
-          <ul class="pricing-table no-bullet text-center">
-            <li class="title">Gold</li>
-            <li class="price">$59.99</li>
-            <li class="description">PREMIUM</li>
-            <li>Merchandise items</li>
-            <li data-equalizer-watch>Collectible Cineland Videos and Toys</li>
-            <li>Parking all the day</li>
-            <li><a class="button" href="#">Buy Now</a></li>
-          </ul>
-        </div>
-        <div class="column small-6 medium-4">
-          <ul class="pricing-table no-bullet text-center">
-            <li class="title">Silver</li>
-            <li class="price">$29.99</li>
-            <li class="description">NORMAL</li>
-            <li>Access playground</li>
-            <li data-equalizer-watch>Merchandise Basic</li>
-            <li>Access at the foodcourt</li>
-            <li><a class="button" href="#">Buy Now</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>  
-      <!-- /Price in Table -->
-
-      <!-- Suscribe   -->
-
-      <section id="suscribete-container" data-magellan-target="suscribete-container">
-        <h3 class="text-center">Suscribe</h3>
-        <h4 class="text-center"><small>Receive the latest news of the festival</small></h4>
-        <form action="" method="" novalidate="" data-abide>
-          <div data-abide-error class="row columns small-12 medium-6 text-center error-container" style="display: none;">
-            <p><i class="fi-alert"></i> Income an invalid email</p>
-          </div>
-          <div class="row columns small-12 medium-6">
-            <div class="input-group">
-              <span class="input-group-label"><i class="fi-mail"></i></span>
-              <input type="email" name="email" class="input-group-field" placeholder="me@mail.com" required>
-              <div class="input-group-button">
-                <input type="submit" class="button" value="Suscribe">
-              </div>
-            </div>
-          </div>
-        </form>
-      </section>
-
-
-      <!-- /Suscribe   -->
-
-
-      <!-- Information -->
-
-      <section id="info-container" data-magellan-target="info-container">
-        <h3 class="text-center">Information</h3>
-        <div class="info-map" data-interchange="[assets/map-small.html, small], [assets/map.html, medium]"></div>
-      </section>
-
-      <!-- /Information -->
+    </div>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
